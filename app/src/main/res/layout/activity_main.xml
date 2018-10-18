@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yihuan.sharecalendar.ui.view.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sm_left_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:rightPadding="100">
+    <!--整体布局1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+<!--菜单布局，因为自定义时固定取View，所以该布局位置固定，如要更改，需相应更改自定义View-->
+       <include layout="@layout/layout_left_menu"/>
+<!--菜单右边的主要布局-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="100px"
+                >
+                <com.yihuan.sharecalendar.ui.view.HomeTitleView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:id="@+id/htv_title"
+                    />
+                <include layout="@layout/layout_spli_gray"/>
+                <com.yihuan.sharecalendar.ui.view.NoScrollViewPager
+                    android:id="@+id/vp_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_gray_split"
+                android:layout_marginBottom="100px"
+                android:layout_gravity="bottom"
+                />
+            <RadioGroup
+                android:id="@+id/rg_main"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_gravity="bottom"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_main_1"
+                    android:text="@string/rb_main_1"
+                    android:drawableTop="@mipmap/icon_create_active"
+                    style="@style/style_main_activity_radiobutton" />
+
+                <com.yihuan.sharecalendar.ui.view.RadioButtonNum
+                    android:id="@+id/rb_main_2"
+                    android:text="@string/rb_main_2"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_radio_month"
+                    style="@style/style_main_activity_radiobutton" />
+                <com.yihuan.sharecalendar.ui.view.RadioButtonNum
+                    android:id="@+id/rb_main_3"
+                    android:text="@string/rb_main_3"
+                    android:drawableTop="@drawable/selector_radio_msg"
+                    style="@style/style_main_activity_radiobutton" />
+                <com.yihuan.sharecalendar.ui.view.RadioButtonNum
+                    android:id="@+id/rb_main_4"
+                    android:text="@string/rb_main_4"
+                    android:drawableTop="@drawable/selector_radio_schedule"
+                    style="@style/style_main_activity_radiobutton" />
+
+                <com.yihuan.sharecalendar.ui.view.RadioButtonNum
+                    android:id="@+id/rb_main_5"
+                    android:text="@string/rb_main_5"
+                    android:drawableTop="@drawable/selector_radio_friend"
+                    style="@style/style_main_activity_radiobutton" />
+            </RadioGroup>
+            <!--灰色背景-->
+            <View
+                android:id="@+id/view_up"
+                android:clickable="true"
+                android:background="@color/color_loadding_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+</com.yihuan.sharecalendar.ui.view.SlidingMenu>

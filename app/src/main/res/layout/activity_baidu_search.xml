@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="30px"
+    android:background="@color/color_gray_split_f5"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入需要搜索的位置信息"
+        style="@style/style_default_edittext"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_color_999_r_border_line"
+        android:drawableLeft="@mipmap/icon_friends_search"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+/>
+
+
+</LinearLayout>

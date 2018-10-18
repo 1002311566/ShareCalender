@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_msg_border"
+    android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_msg_border"
+            android:layout_gravity="center"
+            android:layout_marginTop="105px"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80px"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/ll_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/select_msg_border"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点赞"
+                android:layout_marginLeft="17px"
+                android:textColor="@color/color_white"
+                android:textSize="36px"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14px"
+                android:src="@mipmap/icon_msg_border_up"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="64px"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/select_msg_border"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吐槽"
+                android:layout_marginLeft="17px"
+                android:textColor="@color/color_white"
+                android:textSize="36px"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14px"
+                android:src="@mipmap/icon_msg_border_down"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginTop="40px"
+        android:orientation="vertical"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/shape_white_line_border"
+        >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_height="match_parent"
+            style="@style/style_default_edittext"
+            android:gravity="left|start"
+            android:hint="赞赏/吐槽文字区"
+            android:textSize="28px"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:padding="30px"
+            />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/style_default_button"
+        android:layout_width="532px"
+        android:layout_gravity="center"
+        android:text="提   交"
+        android:layout_marginBottom="145px"
+        android:layout_marginTop="30px"
+        />
+</LinearLayout>

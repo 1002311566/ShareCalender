@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:background="@drawable/select_btn_default_bg"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5px"
+        android:paddingBottom="5px"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_address_gray"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            />
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20px"
+                >
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34px"
+                    android:textColor="@color/color_text_black_222"
+                    />
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34px"
+                    android:layout_marginTop="15px"
+                    android:textColor="@color/color_text_black_999"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+</LinearLayout>

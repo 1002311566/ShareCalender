@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        style="@style/style_default_edittext"
+        android:drawableLeft="@mipmap/icon_search_small"
+        android:hint="搜索" />
+
+    <include layout="@layout/layout_spli_gray"/>
+    <include layout="@layout/layout_spli_margin_gray"/>
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过标签选择联系人"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="32px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/icon_biaoqian"
+        android:drawablePadding="20px"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:background="@drawable/select_btn_default_bg"
+        />
+    <include layout="@layout/layout_spli_margin_gray"/>
+    <!--快捷工具-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:background="@color/color_white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快捷工具"
+            android:drawablePadding="13px"
+            android:paddingTop="30px"
+            android:layout_marginBottom="30px"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/icon_shandian"
+            android:id="@+id/textView" />
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:gravity="center"
+            android:padding="30px"
+            android:textSize="30px"
+            android:textColor="@color/color_blue_007dff"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--通过输入搜索的好友列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:visibility="gone"
+            />
+        <!--所有好友列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            />
+
+    </FrameLayout>
+</LinearLayout>

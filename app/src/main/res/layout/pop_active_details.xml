@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/shape_gray_r_border"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:text="@string/refuse_text1"
+            android:gravity="center"
+            android:textColor="@color/color_blue_39"
+            android:background="@drawable/select_btn_default_bg"
+            android:textSize="40px"
+            />
+        <include layout="@layout/layout_spli_gray"/>
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:text="@string/refuse_text2"
+            android:background="@drawable/select_btn_default_bg"
+            android:gravity="center"
+            android:textColor="@color/color_blue_39"
+            android:textSize="40px"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:text="@string/refuse_text3"
+        android:gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_gray_r_border"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:textColor="@color/color_blue_39"
+        android:textSize="40px"
+        android:layout_marginBottom="30px"
+        />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_r_solid_white"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30px"
+        android:text="周期"
+        android:textColor="@color/color_text_black_333"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/color_gray_split" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:paddingLeft="30px"
+        />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:text="取 消"
+        android:background="@drawable/shape_blue_0bbcff_r_bg"
+        style="@style/style_default_button"
+        android:layout_margin="30px"
+        android:textColor="@color/color_white"
+        />
+</LinearLayout>

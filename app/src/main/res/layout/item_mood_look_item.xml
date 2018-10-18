@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10px"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="118px"
+        android:layout_height="118px">
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@mipmap/logo"
+            android:layout_gravity="left|bottom"
+            />
+        <ImageView
+            android:id="@+id/iv_delete_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_delete_line"
+            android:layout_gravity="right|top"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_black_666"
+        android:textSize="24px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="爱因斯坦"
+        android:layout_marginTop="20px"
+        />
+
+</LinearLayout>

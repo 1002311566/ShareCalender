@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">ShareCalendar</string>
+
+    <string-array name="calendar_week">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+    <!--MainActivity RadioButton-->
+    <string name="rb_main_1">CreateActivities</string>
+    <string name="rb_main_2">Month</string>
+    <!--<string name="rb_main_3">Day</string>-->
+    <string name="rb_main_3">Message</string>
+    <string name="rb_main_4">Schedule</string>
+    <string name="rb_main_5">Friend</string>
+
+    <!--Toast类提示-->
+    <string name="phone_num_null">手机号不能为空，请输入手机号！</string>
+    <string name="phone_num_error">请输入正确的手机号！</string>
+    <string name="code_null">验证码不能为空！</string>
+    <string name="password_null">密码不能为空！</string>
+    <string name="password_no_legal">密码不合法</string>
+    <string name="passwrod_no_same">两次输入密码不一致</string>
+    <string name="send_code_successful">验证码发送成功，请注意查收！</string>
+    <string name="please_select_friend">请选择好友！</string>
+    <string name="select_sex_null">请选择性别！</string>
+    <string name="select_year_null">请选择年代！</string>
+    <string name="select_constellation_null">请选择星座！</string>
+    <string name="select_address_null">请选择所在地！</string>
+    <string name="message_board">请输入内容！</string>
+    <string name="tag_name_null">标签名字不能为空！</string>
+    <string name="active_title_null">请输入活动标题！</string>
+
+    <string name="no_data">测试！</string>
+
+
+    <!--心情设置-->
+    <string name="mood_1">很好</string>
+    <string name="mood_2">一般</string>
+    <string name="mood_3">不错</string>
+    <string name="mood_4">不太好</string>
+    <string name="mood_5">极差</string>
+
+
+
+    <!--活动详情 pop-->
+    <string name="refuse_text1">很遗憾这次无法参加哦</string>
+    <string name="refuse_text2">请联系我商量一下哈</string>
+    <string name="refuse_text3">取消</string>
+    <string name="agree_text1">谢谢，我会如约出席！</string>
+    <string name="agree_text2">联系一下我，我想了解更多。</string>
+
+    <string-array name="week">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="mood">
+        <item>很好(5分)</item>
+        <item>不错(4分)</item>
+        <item>一般(3分)</item>
+        <item>不太好(2分)</item>
+        <item>极差(1分)</item>
+    </string-array>
+
+    <!--大的心情图标-->
+    <string-array name="mood_img_xx">
+        <item>@mipmap/icon_smile_face_0_xxx</item>
+        <item>@mipmap/icon_smile_face_2_xxx</item>
+        <item>@mipmap/icon_smile_face_1_xxx</item>
+        <item>@mipmap/icon_smile_face_3_xxx</item>
+        <item>@mipmap/icon_smile_face_4_xxx</item>
+    </string-array>
+
+    <!--好友列表心情图标-->
+    <string-array name="mood_img">
+        <item>@mipmap/mood_img_0_x</item>
+        <item>@mipmap/mood_img_1_x</item>
+        <item>@mipmap/mood_img_2_x</item>
+        <item>@mipmap/mood_img_3_x</item>
+        <item>@mipmap/mood_img_4_x</item>
+    </string-array>
+
+    <!--周期-->
+    <string-array name="create_active_period">
+        <item>一次性活动</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>每两周</item>
+        <item>每月</item>
+        <item>每年</item>
+    </string-array>
+
+    <!--提醒时间-->
+    <string-array name="create_active_remind_time">
+        <item>准时</item>
+        <item>5分钟前</item>
+        <item>10分钟前</item>
+        <item>15分钟前</item>
+        <item>30分钟前</item>
+        <item>1小时前</item>
+        <item>2小时前</item>
+        <item>24小时前</item>
+        <item>2天前</item>
+        <item>1周前</item>
+    </string-array>
+
+    <string name="picker_sure">确定</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_title">选择时间</string>
+
+    <string name="picker_year">年</string>
+    <string name="picker_month">月</string>
+    <string name="picker_day">日</string>
+    <string name="picker_hour">时</string>
+    <string name="picker_minute">分</string>
+
+
+</resources>

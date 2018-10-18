@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_r_solid_white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="80px"
+        >
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_1"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="50px"
+            android:layout_weight="1" />
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_2"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginRight="80px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_marginTop="70px"
+        android:layout_marginBottom="50px"
+        >
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            style="@style/style_default_button"
+            android:text="取消"
+            android:layout_marginRight="30px"
+            />
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            style="@style/style_default_button"
+            android:text="确定"
+            />
+    </LinearLayout>
+</LinearLayout>

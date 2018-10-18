@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="60px"
+    android:paddingRight="60px"
+    android:paddingTop="60px"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="删除联系人"
+        style="@style/style_text_default"
+        android:layout_gravity="left"
+        android:textSize="40px"
+        />
+
+    <TextView
+        android:layout_marginTop="55px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        style="@style/style_text_default"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:gravity="right|center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/color_gray_6e"
+            android:textSize="32px"
+            android:padding="20px"
+            />
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/color_red_d700"
+            android:textSize="32px"
+            android:padding="20px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_spli_margin_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="23px"
+        android:paddingBottom="23px"
+        >
+        <com.yihuan.sharecalendar.ui.view.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:text="昵称"
+            style="@style/style_text_default"
+            android:layout_marginLeft="30px"
+            android:gravity="top"
+            android:textSize="40px"
+            android:layout_marginTop="10px"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+    <!--附加消息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="附加消息"
+        android:layout_marginRight="30px"
+        android:textColor="@color/color_gray_6e"
+        android:textSize="30px"
+        android:paddingTop="37px"
+        android:paddingBottom="37px"
+        />
+
+        <TextView
+            style="@style/style_text_default"
+            android:text="我是日历"
+            android:id="@+id/tv_des"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:gravity="center"
+            android:paddingTop="15px"
+            android:paddingBottom="15px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:background="@drawable/shape_color_999_r_border_line"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+
+    <!--来源-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="37px"
+        android:paddingBottom="37px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来源        "
+            android:layout_marginRight="30px"
+            android:textColor="@color/color_gray_6e"
+            android:textSize="30px"
+            />
+
+        <TextView
+            style="@style/style_text_default"
+            android:text="单项好友"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="62px"
+        android:background="@color/color_gray_split_f5"
+        >
+        <TextView
+            android:id="@+id/tv_refuse"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拒绝"
+            android:textColor="@color/color_text_black_333"
+            android:textSize="32px"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:gravity="center"
+            android:background="@drawable/shape_color_999_r_border_line"
+            />
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="接受"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/color_white"
+            android:textSize="32px"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:gravity="center"
+            android:background="@drawable/selector_blue_btn"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

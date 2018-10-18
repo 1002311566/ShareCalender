@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="30px"
+    android:paddingBottom="30px"
+    android:background="@color/color_white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="34px"
+            android:textColor="@color/color_text_black_111"
+            />
+
+        <TextView
+            android:id="@+id/tv_address_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="30px"
+            android:textColor="@color/color_text_black_666"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_baidu_selected"
+        android:layout_marginRight="30px"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

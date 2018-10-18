@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_r_solid_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="该好友尚未对您公开心情指数，赶紧联系他对您公开吧"
+        android:textSize="36px"
+        android:textColor="@color/color_text_black_111"
+        android:paddingTop="60px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingBottom="50px"
+        />
+
+    <include layout="@layout/layout_spli_gray"/>
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:textSize="36px"
+        android:textColor="@color/color_blue_2"
+        android:gravity="center"
+        android:padding="30px"
+        android:background="@drawable/select_btn_default_bg"
+        />
+
+</LinearLayout>

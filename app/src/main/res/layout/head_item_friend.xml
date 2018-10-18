@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--新的朋友-->
+    <LinearLayout
+        android:id="@+id/ll_new_friend"
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="15px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="18px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_new_friends" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="新的朋友"
+            android:textColor="@color/color_text_black_111"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:id="@+id/ll_new_friend_msg_count"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginRight="30px"
+            android:background="@drawable/shape_circle_red"
+            >
+
+            <TextView
+                android:id="@+id/tv_new_friend_msg_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="26px"
+                android:text="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/color_gray_split" />
+
+    />
+    <!--标签-->
+    <LinearLayout
+        android:id="@+id/ll_tag_friendpage"
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="15px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="18px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_friends_flag" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="标签"
+            android:textColor="@color/color_text_black_111"
+            android:textSize="32px" />
+
+        <!--<TextView-->
+        <!--android:layout_width="40px"-->
+        <!--android:layout_height="40px"-->
+        <!--android:text="2"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@mipmap/bg_new_friends_count"-->
+        <!--/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

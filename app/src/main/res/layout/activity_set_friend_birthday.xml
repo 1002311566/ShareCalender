@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tv_solar_birthday"
+        android:text="新历生日"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@drawable/select_btn_default_bg"
+        android:textColor="@color/color_text_black_222"
+        android:textSize="32px"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        />
+
+    <include layout="@layout/layout_spli_gray"/>
+
+    <TextView
+        android:id="@+id/tv_lunar_birthday"
+        android:text="农历生日"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:background="@drawable/select_btn_default_bg"
+        android:textColor="@color/color_text_black_222"
+        android:textSize="32px"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        />
+
+    <include layout="@layout/layout_spli_gray"/>
+
+    <include layout="@layout/layout_spli_margin_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="30px"
+        android:background="@color/color_white"
+        >
+        <TextView
+            android:text="是否设置为永久性提醒"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:textColor="@color/color_text_black_222"
+            android:textSize="32px"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_always_remind"
+            android:background="@drawable/selector_new_active_flag"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+    <TextView
+        android:text="当设置为永久性提醒时，好友每年生日的前一天共享日历将提醒您"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="40px"
+        android:textSize="24px"
+        android:textColor="@color/color_text_black_999"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_split_f5"/>
+</LinearLayout>

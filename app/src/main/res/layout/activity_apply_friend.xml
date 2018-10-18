@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_split_f5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您需要发送验证申请，等待对方通过"
+        android:textSize="28px"
+        android:textColor="@color/color_text_black_999"
+        android:padding="30px"
+        />
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/style_default_edittext"
+        android:hint="说点什么吧"
+        android:background="@color/color_white"
+        />
+</LinearLayout>

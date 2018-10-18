@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10px"
+    android:gravity="center"
+    android:paddingBottom="10px"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/style_text_default"
+        android:text="每月"
+        android:layout_marginRight="33px"
+        />
+
+    <EditText
+        android:id="@+id/et_day"
+        style="@style/style_default_edittext"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_color_999_r_border_line"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColorHint="@color/color_text_black_333"
+        android:gravity="center"
+        android:padding="10px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/style_text_default"
+        android:text="日"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        />
+
+</LinearLayout>

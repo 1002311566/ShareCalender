@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/tv_content"
+    android:layout_height="115px"
+    android:button="@null"
+    android:paddingRight="30px"
+    android:drawableRight="@drawable/selector_check_box"
+    android:gravity="center_vertical|left"
+    android:textSize="30px"
+    android:textColor="@color/color_text_black_333"
+    android:text="一次性活动" />

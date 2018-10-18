@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_baidu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            style="@style/style_default_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:background="@drawable/shape_color_999_r1_border_line"
+            android:drawableLeft="@mipmap/icon_friends_search"
+            android:gravity="center_vertical"
+            android:hint="请输入需要搜索的位置信息" />
+
+        <ImageView
+            android:id="@+id/iv_to_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80px"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/shape_r_solid_white"
+            android:padding="20px"
+            android:src="@mipmap/icon_to_my_location" />
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30px"
+            android:src="@mipmap/icon_location" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_recyclerview"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+</LinearLayout>

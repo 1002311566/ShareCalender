@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yihuan.sharecalendar.ui.view.TouchLineanrLayout
+        android:id="@+id/ll_content_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+        <!--上部分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/layout_spli_margin_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    style="@style/new_create_active_text"
+                    android:text="名称" />
+
+                <EditText
+                    android:id="@+id/et_remind_name"
+                    style="@style/style_default_edittext"
+                    android:gravity="right"
+                    android:hint="请输入提醒名称" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <include layout="@layout/layout_spli_margin_gray" />
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <!--开始时间-->
+            <LinearLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    style="@style/new_create_active_text"
+                    android:text="开始" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    style="@style/new_create_active_text"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@mipmap/icon_new_active_right_arrow"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_spli_gray" />
+            <!--结束时间-->
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    style="@style/new_create_active_text"
+                    android:text="结束" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    style="@style/new_create_active_text"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@mipmap/icon_new_active_right_arrow"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <include layout="@layout/layout_spli_margin_gray" />
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30px">
+
+                <RadioGroup
+                    android:id="@+id/rg_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_check_box1"
+                        android:drawablePadding="17px"
+                        android:paddingBottom="26px"
+                        android:paddingTop="26px"
+                        android:text="每周"
+                        android:textColor="@color/color_text_black_222"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="26px"
+                        android:background="@color/color_gray_split" />
+
+                    <RadioButton
+                        android:id="@+id/rb_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_check_box1"
+                        android:drawablePadding="17px"
+                        android:paddingBottom="26px"
+                        android:paddingTop="26px"
+                        android:text="每月"
+                        android:textColor="@color/color_text_black_222"
+                        android:textSize="30px" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="1px"
+                    android:layout_weight="1" />
+                <!--添加日期-->
+                <TextView
+                    android:id="@+id/tv_add_month_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/shape_color_999_r_border_line"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="添加日期 +"
+                    android:textColor="@color/color_text_black_222"
+                    android:textSize="30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="@color/color_gray_split" />
+            <!--星期选择-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--每月-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="beforeDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!--每周-->
+                <com.yihuan.sharecalendar.ui.view.CheckBoxLayout
+                    android:id="@+id/checkbox_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    app:is_single="false"
+                    app:item_count="7"
+                    app:layout_item="@layout/layout_checkboxlayout_item" />
+
+            </FrameLayout>
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <include layout="@layout/layout_spli_margin_gray" />
+
+            <include layout="@layout/layout_spli_gray" />
+
+            <include layout="@layout/layout_spli_gray" />
+            <!--自定义间隔-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30px">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_naozhong"
+                        android:drawablePadding="4px"
+                        android:gravity="center_vertical"
+                        android:text="提醒时间"
+                        android:textColor="@color/color_text_black_222"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="1px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_add_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/shape_color_999_r_border_line"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="添加时间 +"
+                    android:textColor="@color/color_text_black_222"
+                    android:textSize="30px" />
+            </LinearLayout>
+            <!--自定义间隔-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_add_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--添加共享好友-->
+        <LinearLayout
+            android:id="@+id/ll_share1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_blue_8aebcc"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginBottom="6px"
+                android:layout_marginTop="6px"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:gravity="center_vertical"
+                android:paddingLeft="40px"
+                android:text="添加分享好友"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+
+        <!--添加好友列表-->
+        <RelativeLayout
+            android:id="@+id/rl_share2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_add_share_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="10px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+        </RelativeLayout>
+    </com.yihuan.sharecalendar.ui.view.TouchLineanrLayout>
+
+</ScrollView>

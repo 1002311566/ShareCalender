@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--顶部标题栏-->
+    <com.yihuan.sharecalendar.ui.view.TitleView
+        android:id="@+id/title_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/rv_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/color_blue_00baff"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:paddingTop="20px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_line_border"
+                android:paddingBottom="15px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="15px"
+                android:text="全选"
+                android:textColor="@color/color_white"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_line_border"
+                android:paddingBottom="15px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="15px"
+                android:text="删除"
+                android:textColor="@color/color_white"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_color_999_r1_border_line"
+    android:gravity="center"
+    android:paddingBottom="15px"
+    android:paddingTop="15px"
+    android:text="家人"
+    android:layout_margin="20px"
+    android:id="@+id/tv_tag_name"
+    android:textColor="@color/color_text_black_111"
+    android:textSize="28px" />

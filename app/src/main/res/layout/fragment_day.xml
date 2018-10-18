@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_day_root_layout"
+    android:layout_alignWithParentIfMissing="true"
+    android:orientation="vertical">
+    <!--星期-->
+    <com.yihuan.sharecalendar.ui.view.calendar.WeekBarView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/calendar_bg_color"
+        app:week_color="@color/color_text_black_111"
+        app:week_color_other="@color/color_text_black_999"
+        app:week_size="12" />
+    <com.yihuan.sharecalendar.ui.view.calendar.week.WeekCalendarView
+        android:id="@+id/wcvCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/week_calendar_height"
+        android:overScrollMode="never"
+        app:week_day_text_size="@integer/calendar_text_size"
+        app:week_holiday_color="@color/holiday_text_color"
+        app:week_selected_circle_color="@color/select_circle_color"
+        app:week_show_holiday_hint="false"
+        app:week_show_lunar="true"
+        app:week_show_task_hint="true" />
+    <!--全天日程-->
+    <com.yihuan.sharecalendar.ui.view.NoScrollRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_fullday"
+        />
+    <!--农历-->
+    <include layout="@layout/calendar_layout_lunar_bar"
+        android:id="@+id/layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include layout="@layout/layout_spli_gray"/>
+    <!--24小时时间段-->
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        />
+</LinearLayout>

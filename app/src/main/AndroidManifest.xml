@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yihuan.sharecalendar">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //鉴权所需该权限获取进程列表
+    <uses-permission android:name="android.permission.CAMERA" />
+    //使用步行AR导航，配置Camera权限
+
+    <uses-permission android:name="android.permission.VIBRATE" />//震动
+    //开机广播权限
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".global.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+
+        <!--蒲公英-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="1f470de51a78e5223463836ac5a3c041"></meta-data>
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ewHMCu5dSZFygq71ekz9UMV1gh0FcMB9" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />'
+
+        <!--//设置适配屏幕尺寸-->
+        <meta-data
+            android:name="design_width"
+            android:value="750"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1334"></meta-data>
+
+        <!--兼容android7.0文件访问方式-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yihuan.sharecalendar.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/calendar_path" />
+        </provider>
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="jiashusharecalendar.com"
+                    android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!--注册-->
+        <activity
+            android:name=".ui.activity.login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--忘记密码-->
+        <activity
+            android:name=".ui.activity.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--设置新密码-->
+        <activity
+            android:name=".ui.activity.setting.SetNewPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--完成界面-->
+        <activity
+            android:name=".ui.activity.login.CompleteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--新建活动-->
+        <activity
+            android:name=".ui.activity.active.CreateActiveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--设置-->
+        <activity
+            android:name=".ui.activity.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--完善资料-->
+        <activity
+            android:name=".ui.activity.login.SetInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--完善资料》选择界面-->
+        <activity
+            android:name=".ui.activity.login.SetInfoActivity_Select"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--设置》关于我们-->
+        <activity
+            android:name=".ui.activity.setting.AboutMeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--左侧菜单》修改资料-->
+        <activity
+            android:name=".ui.activity.setting.EditUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--选择联系人-->
+        <activity
+            android:name=".ui.activity.active.SelectContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--留言板-->
+        <activity
+            android:name=".ui.activity.setting.MessageBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--定制化提醒-->
+        <activity
+            android:name=".ui.activity.setting.AutoRemindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--消息-->
+        <activity
+            android:name=".ui.activity.hometitle.MessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--我的心情-->
+        <activity
+            android:name=".ui.activity.hometitle.MyMoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--活动详情-->
+        <activity
+            android:name=".ui.activity.active.ActiveDetailsActivity_Publish"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.active.ActiveDetailsActivity_Receiver"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--首页搜索-->
+        <activity
+            android:name=".ui.activity.hometitle.ScheduleSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--修改资料》编辑Edit页面-->
+        <activity
+            android:name=".ui.activity.setting.SetInfo_SetEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--好友》新的朋友-->
+        <activity
+            android:name=".ui.activity.friends.NewFriendListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--好友》添加朋友-->
+        <activity
+            android:name=".ui.activity.friends.UserSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--好友》好友详情-->
+        <!--好友》添加朋友》详细资料-->
+        <activity
+            android:name=".ui.activity.friends.AddFriendDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--好友》添加朋友》详细资料》申请验证-->
+        <activity
+            android:name=".ui.activity.friends.ApplyFriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--好友》标签列表-->
+        <activity
+            android:name=".ui.activity.friends.TagListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--好友》新建标签-->
+        <activity
+            android:name=".ui.activity.friends.CreateTagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--修改头像-->
+        <activity
+            android:name=".ui.activity.setting.SetHeaderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--推广大使-->
+        <activity
+            android:name=".ui.activity.setting.GeneralizeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--更换皮肤-->
+        <activity
+            android:name=".ui.activity.setting.ChangeThemeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--新增提醒-->
+        <activity
+            android:name=".ui.activity.setting.AddRemindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--心情指数查看-->
+        <activity
+            android:name=".ui.activity.setting.SetMoodPermissionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--好友详情-->
+        <activity
+            android:name=".ui.activity.friends.MyFriendDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--头像裁剪-->
+        <activity
+            android:name=".ui.activity.setting.CropActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--选择联系人》搜索-->
+        <activity
+            android:name=".ui.activity.active.SelectContactBySearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--选择联系人》搜索》某个标签-->
+        <activity
+            android:name=".ui.activity.friends.FriendListByTagtActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--好友详情》设置-->
+        <activity
+            android:name=".ui.activity.friends.MyFriendSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--查看好友心情指数-->
+        <activity
+            android:name=".ui.activity.friends.LookFriendMoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--搜索好友列表-->
+        <activity
+            android:name=".ui.activity.friends.FriendSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--设置好友标签-->
+        <activity
+            android:name=".ui.activity.friends.SetFriendTagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--年试图-->
+        <activity
+            android:name=".ui.activity.setting.YearCalendarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--时间选择-->
+        <activity
+            android:name=".ui.activity.active.SelectTimeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--申请详情-->
+        <activity
+            android:name=".ui.activity.friends.ApplyDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--备注好友生日-->
+        <activity
+            android:name=".ui.activity.friends.SetFriendBirthdayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--百度地图-->
+        <activity
+            android:name=".ui.activity.active.BDMapActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--极光推送接收器-->
+        <!--所有广播过滤条件-->
+        <!--<intent-filter>-->
+        <!--<action android:name="cn.jpush.android.intent.REGISTRATION" />注册到极光时-->
+        <!--<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />自定义消息-->
+        <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />接收空消息仍触发-->
+        <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> 点击通知的操作-->
+        <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />自定义按钮被点击-->
+        <!--<action android:name="cn.jpush.android.intent.CONNECTION" />-->
+        <!--<category android:name="You package Name" />-->
+        <!--</intent-filter>-->
+        <receiver
+            android:name=".ui.receiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+
+                <category android:name="com.yihuan.sharecalendar" />
+            </intent-filter>
+        </receiver>
+
+        //微信，微博 绑定手机号
+        <activity
+            android:name=".ui.activity.login.BindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //拥有查看心情权限的好友
+        <activity
+            android:name=".ui.activity.setting.MoodLookListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //百度地图搜索页
+        <activity
+            android:name=".ui.activity.active.BDSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //好友空闲状态
+        <activity
+            android:name=".ui.activity.friends.FriendCalendarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //跳转到指定日期
+        <activity
+            android:name=".ui.activity.setting.ToDateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //闹钟广播接收器
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:exported="true"
+            android:process=":remote" />
+
+        //接收到闹钟后启动的activity
+        <activity
+            android:name=".alarm.AlarmActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog_Activity"
+            android:windowSoftInputMode="adjustPan" />
+
+        //处理闹钟的服务
+        <service
+            android:name=".alarm.AlarmService"
+            android:icon="@mipmap/logo"
+            android:process=":remote"
+            android:roundIcon="@mipmap/logo" />
+        <service
+            android:name=".alarm.AlarmService$InnerService"
+            android:icon="@mipmap/logo"
+            android:process=":remote"
+            android:roundIcon="@mipmap/logo" />
+
+        <service
+            android:name=".alarm.LocalService"
+            android:exported="true"
+            android:icon="@mipmap/logo"
+            android:roundIcon="@mipmap/logo" />
+
+        //保活activity
+        <activity
+            android:name=".alarm.live.KeepLiveActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:process=":remote"
+            android:screenOrientation="portrait"
+            android:theme="@style/KeepLiveActivityStyle"
+            android:windowSoftInputMode="adjustPan" />
+
+        //开机广播监听
+        <receiver
+            android:name=".alarm.live.StartBootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        //分享推荐
+        <activity
+            android:name=".ui.activity.setting.ShareRecommendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //广告详情
+        <activity
+            android:name=".ui.activity.setting.AdvertisingDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        //绑定时设置密码
+        <activity
+            android:name=".ui.activity.login.BindSetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.active.ImgLookerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        //test
+        <activity
+            android:name=".ui.view.TActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

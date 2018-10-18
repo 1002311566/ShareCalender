@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_spli_margin_gray" />
+    <!--性别-->
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/new_create_active_text"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            style="@style/new_create_active_text"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/icon_new_active_right_arrow"
+            android:gravity="right"
+            android:text="请选择"
+            android:textColor="@color/color_text_black_999" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <!--年代-->
+    <LinearLayout
+        android:id="@+id/ll_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/new_create_active_text"
+            android:text="年代" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            style="@style/new_create_active_text"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/icon_new_active_right_arrow"
+            android:gravity="right"
+            android:text="请选择"
+            android:textColor="@color/color_text_black_999" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+    <!--星座-->
+    <LinearLayout
+        android:id="@+id/ll_constellation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/new_create_active_text"
+            android:text="星座" />
+
+        <TextView
+            android:id="@+id/tv_constellation"
+            style="@style/new_create_active_text"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/icon_new_active_right_arrow"
+            android:gravity="right"
+            android:text="请选择"
+            android:textColor="@color/color_text_black_999" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_margin_gray" />
+
+    <!--所在地-->
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/new_create_active_text"
+            android:text="所在地" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/new_create_active_text"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/icon_new_active_right_arrow"
+            android:gravity="right"
+            android:text="请选择"
+            android:textColor="@color/color_text_black_999" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_split_f5"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/style_default_button"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="79px"
+            android:text="下 一 步" />
+    </LinearLayout>
+
+</LinearLayout>

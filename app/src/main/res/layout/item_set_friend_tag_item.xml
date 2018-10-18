@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cb_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:background="@color/color_white"
+    android:textSize="32px"
+    android:textColor="@color/color_text_black_222"
+    android:drawableRight="@drawable/selector_check_box"
+    android:padding="30px"
+    android:text="家人" />

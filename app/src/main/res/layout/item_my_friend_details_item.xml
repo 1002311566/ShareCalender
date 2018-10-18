@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/select_btn_default_bg"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <ImageView
+
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:src="@drawable/calendar_shape_orange_dot" />
+
+    <TextView
+        android:id="@+id/tv_active_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_weight="1"
+        android:paddingBottom="45px"
+        android:paddingTop="45px"
+        android:text="周末烧烤"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:paddingBottom="45px"
+        android:paddingTop="45px"
+        android:text="7月24日 周四 18:00"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="30px" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="invisible"
+        >
+    <View
+        android:id="@+id/v_empty"
+        android:layout_width="188px"
+        android:layout_height="218px"
+        android:background="@mipmap/bg_active_empty"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70px"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无活动， 马上"
+            android:textSize="36px"
+            android:textColor="@color/color_text_black_999"
+            />
+
+        <TextView
+            android:id="@+id/tv_to_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建活动"
+            android:textSize="36px"
+            android:textColor="@color/color_blue_00baff"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

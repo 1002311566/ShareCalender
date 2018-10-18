@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20px"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_look_mood"
+            style="@style/style_default_button"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_look_state"
+            style="@style/style_default_button"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="11px"
+            android:textColor="@color/color_white"
+            android:text="查看好友空闲状态"
+            android:background="@drawable/shape_blue_66d5ff_r_bg"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

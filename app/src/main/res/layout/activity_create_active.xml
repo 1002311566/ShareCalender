@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:text="标题" />
+
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/create_active_right"
+                android:gravity="right"
+                android:hint="请输入活动标题"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+        <!--位置-->
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:text="位置" />
+
+            <EditText
+                android:id="@+id/et_address"
+                style="@style/create_active_right"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="请输入活动位置"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/iv_into_baidu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10px"
+                android:paddingRight="30px"
+                android:src="@mipmap/icon_address_blue" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <include layout="@layout/layout_spli_margin_gray" />
+
+        <include layout="@layout/layout_spli_gray" />
+        <!--全天-->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="全天" />
+
+            <TextView
+                android:id="@+id/tv_all_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/selector_new_active_flag" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+        <!--开始时间-->
+        <LinearLayout
+            android:id="@+id/ll_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:text="开始" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/new_create_active_text"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:drawablePadding="20px"
+                android:drawableRight="@mipmap/icon_new_active_right_arrow"
+                android:gravity="right"
+                android:hint="请选择开始时间"
+                android:textColor="@color/color_text_black_666"
+                android:textColorHint="@color/color_text_black_666" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+        <!--结束时间-->
+        <LinearLayout
+            android:id="@+id/ll_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:text="结束" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/new_create_active_text"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:drawablePadding="20px"
+                android:drawableRight="@mipmap/icon_new_active_right_arrow"
+                android:gravity="right"
+                android:hint="请选择结束时间"
+                android:textColor="@color/color_text_black_666"
+                android:textColorHint="@color/color_text_black_666" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <!--周期-->
+        <LinearLayout
+            android:id="@+id/ll_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:visibility="gone"
+            android:paddingRight="30px">
+
+            <TextView
+                style="@style/new_create_active_text"
+                android:text="周期" />
+
+            <TextView
+                android:id="@+id/tv_period"
+                style="@style/new_create_active_text"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:drawablePadding="20px"
+                android:drawableRight="@mipmap/icon_new_active_right_arrow"
+                android:gravity="right"
+                android:text="一次性活动"
+                android:textColor="@color/color_text_black_666" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <include layout="@layout/layout_spli_margin_gray" />
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_add_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <include layout="@layout/layout_spli_margin_gray" />
+
+        <include layout="@layout/layout_spli_gray" />
+        <!--说明-->
+        <EditText
+            android:id="@+id/et_other"
+            style="@style/style_default_edittext"
+            android:gravity="left|top"
+            android:hint="说明"
+            android:inputType="textMultiLine"
+            android:minHeight="180px" />
+
+        <!--添加图片-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_imglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="10px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <include layout="@layout/layout_spli_margin_gray" />
+
+        <!--添加共享好友-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:gravity="center_vertical"
+        android:background="@color/color_blue_8aebcc"
+        >
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_marginTop="6px"
+            android:layout_marginBottom="6px"
+            android:src="@mipmap/logo"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical"
+            android:paddingLeft="40px"
+            android:text="添加分享好友"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_20" />
+
+    </LinearLayout>
+
+        <!--添加好友列表-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="10px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

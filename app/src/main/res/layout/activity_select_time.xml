@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="41px"
+        android:background="@color/color_gray_split_f5" />
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="25px"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2017"
+            android:textColor="@color/color_text_black_222"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40px"
+        android:paddingBottom="40px"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_1"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1" />
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_2"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1" />
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_3"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="@color/color_gray_split_f5" />
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40px"
+        android:paddingBottom="40px"
+        android:gravity="center"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_4"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginLeft="140px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:text=":"
+            android:textStyle="bold"
+            android:textSize="50px"
+            android:textColor="@color/color_text_black_111"
+            />
+
+        <com.yihuan.sharecalendar.ui.view.SelectorView
+            android:id="@+id/sv_5"
+            android:layout_width="0px"
+            android:layout_height="400px"
+            android:layout_marginRight="140px"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

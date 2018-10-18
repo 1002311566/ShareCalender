@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_hour"
+        style="@style/style_default_edittext"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_color_999_r_border_line"
+        android:inputType="time"
+        android:maxLength="3"
+        android:textColorHint="@color/color_text_black_333"
+        android:gravity="center"
+        android:padding="10px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/style_text_default"
+        android:text="时"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        />
+
+    <EditText
+        android:id="@+id/et_minute"
+        style="@style/style_default_edittext"
+        android:layout_width="150px"
+        android:maxLength="3"
+        android:gravity="center"
+        android:textColorHint="@color/color_text_black_333"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_color_999_r_border_line"
+        android:inputType="time"
+        android:padding="10px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/style_text_default"
+        android:text="分"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        />
+
+</LinearLayout>

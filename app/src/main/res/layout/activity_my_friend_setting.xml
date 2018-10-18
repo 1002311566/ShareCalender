@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_split_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_spli_margin_gray"/>
+    <include layout="@layout/layout_spli_gray"/>
+
+    <TextView
+        android:id="@+id/tv_set_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置标签"
+        android:padding="30px"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="32px"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:background="@drawable/select_btn_default_bg"
+        />
+    <include layout="@layout/layout_spli_gray"/>
+
+    <TextView
+        android:id="@+id/tv_backup_brithday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备注好友生日"
+        android:padding="30px"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="32px"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:background="@drawable/select_btn_default_bg"
+        />
+    <include layout="@layout/layout_spli_gray"/>
+    <Button
+        android:id="@+id/btn_delete_my_friend"
+        android:text="删除好友"
+        android:textColor="@color/color_white"
+        style="@style/style_default_button"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/selector_defualt_img_button"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+    />
+
+
+</LinearLayout>

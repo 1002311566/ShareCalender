@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="55px"
+        android:text="TA的心情"
+        android:textColor="@color/color_text_black_222"
+        android:textSize="40px" />
+
+    <ImageView
+        android:id="@+id/iv_mood_img"
+        android:layout_width="262px"
+        android:layout_height="262px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="78px"
+        android:src="@mipmap/icon_smile_face_0_xxx" />
+
+    <TextView
+        android:id="@+id/tv_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="47px"
+        android:textColor="@color/color_text_black_111"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:background="@color/color_green_1"
+        android:paddingBottom="20px"
+        android:paddingLeft="60px"
+        android:paddingTop="20px"
+        android:text="TA的一周心情指数"
+        android:textColor="@color/color_white" />
+
+    <com.yihuan.sharecalendar.ui.view.MoodView
+        android:id="@+id/moodView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bottom_text_color="@color/color_text_black_666"
+        app:bottom_text_size="14sp"
+        app:circle_color="@color/color_blue"
+        app:left_text_color="@color/color_text_black_666"
+        app:left_text_size="14sp"
+        app:line_color="@color/color_red_fc46"
+        app:x_line_color="@color/color_gray_split"
+        app:xy_color="@color/color_gray_c3" />
+
+
+</LinearLayout>

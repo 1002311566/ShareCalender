@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="510px"
+        android:layout_marginTop="120px"
+        android:src="@mipmap/icon_big_header"
+        />
+
+    <Button
+        android:id="@+id/btn_set_header"
+        style="@style/style_default_button"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:text="从 相 册 选 一 张"
+        android:layout_marginTop="80px"
+        />
+    <Button
+        android:id="@+id/btn_set_header_crame"
+        style="@style/style_default_button"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:text="拍 一 张 照 片"
+        android:layout_marginTop="20px"
+        />
+
+</LinearLayout>

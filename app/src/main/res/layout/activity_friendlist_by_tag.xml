@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--快捷工具-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:drawableLeft="@mipmap/icon_shandian"
+            android:drawablePadding="13px"
+            android:gravity="center"
+            android:paddingTop="30px"
+            android:text="快捷工具" />
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="全选"
+            android:textColor="@color/color_blue_007dff"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray"/>
+
+    <include layout="@layout/layout_recyclerview"/>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30px"
+    android:gravity="center_vertical"
+    android:layout_marginTop="20px"
+    android:layout_marginBottom="20px"
+    android:background="@drawable/select_btn_default_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_add"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建标签"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/color_blue"
+        android:textSize="32px"
+        />
+</LinearLayout>

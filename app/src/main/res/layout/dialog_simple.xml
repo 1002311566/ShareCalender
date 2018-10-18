@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_r_solid_white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="neirong"
+        android:textSize="36px"
+        android:padding="50px"
+        android:textColor="@color/color_text_black_111"
+        android:gravity="center"
+        />
+
+    <include layout="@layout/layout_spli_gray"/>
+    
+    <TextView
+        android:id="@+id/tv_btn_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:textSize="36px"
+        android:textColor="@color/color_blue_007dff"
+        android:gravity="center"
+        android:padding="30px"
+        />
+
+</LinearLayout>

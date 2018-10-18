@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/color_gray_split_f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical"
+        android:background="@drawable/shape_r_solid_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="25px">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2017"
+                android:textColor="@color/color_text_black_222"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_spli_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40px"
+            android:paddingBottom="40px"
+            android:background="@color/color_white"
+            android:orientation="horizontal">
+
+            <com.yihuan.sharecalendar.ui.view.SelectorView
+                android:id="@+id/sv_1"
+                android:layout_width="0px"
+                android:layout_height="400px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px"
+                android:layout_weight="1" />
+
+            <com.yihuan.sharecalendar.ui.view.SelectorView
+                android:id="@+id/sv_2"
+                android:layout_width="0px"
+                android:layout_height="400px"
+                android:layout_marginRight="10px"
+                android:layout_weight="1" />
+
+            <com.yihuan.sharecalendar.ui.view.SelectorView
+                android:id="@+id/sv_3"
+                android:layout_width="0px"
+                android:layout_height="400px"
+                android:layout_marginRight="50px"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="55px"
+            android:layout_marginBottom="54px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            >
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_r_solid_white_border_blue"
+                android:text="取 消"
+                android:layout_marginRight="28px"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:textColor="@color/color_blue_00baff"
+                android:textSize="34px"
+                />
+
+            <TextView
+                android:id="@+id/tv_enter"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_defualt_img_button"
+                android:text="确 定"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:textColor="@color/color_white"
+                android:textSize="34px"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yihuan.sharecalendar.ui.view.TvChannelItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tv_channel"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="70dip" />

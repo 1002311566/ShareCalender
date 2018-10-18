@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@color/color_gray_split_f5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标签名字"
+        android:textColor="@color/color_text_black_999"
+        android:textSize="28px"
+        android:paddingTop="40px"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        />
+    <include layout="@layout/layout_spli_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/et_tag_name"
+            style="@style/style_default_edittext"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请输入标签名字"
+            android:paddingLeft="30px"
+            android:textColorHint="@color/color_text_black_999"
+            />
+        <ImageView
+            android:id="@+id/iv_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_x_gray"
+            android:paddingRight="30px"
+            android:paddingLeft="30px"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_spli_gray"/>
+    <TextView
+        android:background="@color/color_gray_split_f5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成员"
+        android:textColor="@color/color_text_black_999"
+        android:textSize="28px"
+        android:paddingTop="40px"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        />
+    <include layout="@layout/layout_spli_gray"/>
+
+    <!--添加好友列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/style_default_button"
+        android:text="删 除 标 签"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+</LinearLayout>

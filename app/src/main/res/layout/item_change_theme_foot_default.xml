@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344px"
+    android:layout_height="506px"
+    android:background="@color/color_white"
+    android:layout_margin="20px"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="140px"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_wunai"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="26px"
+            android:text="不需要壁纸？"
+            android:padding="15px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20px"
+        android:layout_gravity="bottom|center_horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置为白色背景"
+        android:textColor="@color/color_text_black"
+        android:textSize="30px"
+        android:layout_marginBottom="17px"
+        />
+
+    <ImageView
+        android:id="@+id/iv_seleted"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:src="@drawable/selector_check_3"
+        />
+    </LinearLayout>
+
+</FrameLayout>

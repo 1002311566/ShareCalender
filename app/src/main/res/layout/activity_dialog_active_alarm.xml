@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_alarm"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_alarm_clock"
+        android:layout_marginTop="104px"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您有1条提醒"
+        android:textColor="@color/color_white"
+        android:textSize="34px"
+        android:layout_marginTop="40px"
+        />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本条开始时间:"
+        android:textColor="@color/color_white"
+        android:textSize="26px"
+        android:layout_marginTop="16px"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日程即将开始"
+        android:textColor="@color/color_blue_00baff"
+        android:textSize="50px"
+        android:layout_marginTop="47px"
+        android:layout_marginBottom="43px"
+        />
+
+    <TextView
+        android:id="@+id/tv_active_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_black_222"
+        android:textSize="30px"
+        android:layout_marginBottom="80px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="25px"
+        >
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_r_solid_white_border_blue"
+            android:text="查看详情"
+            android:layout_marginRight="28px"
+            android:gravity="center"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:textColor="@color/color_blue_00baff"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_defualt_img_button"
+            android:text="知道了"
+            android:gravity="center"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:textColor="@color/color_white"
+            android:textSize="30px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

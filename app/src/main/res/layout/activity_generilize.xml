@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_split_f5"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="长按图片保存到相册"
+            android:layout_marginTop="6px"
+            android:textColor="@color/color_text_black_666"
+            android:textSize="28px"
+            android:gravity="center"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1050px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80px"
+                android:layout_marginRight="80px"
+                android:layout_marginBottom="100px"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@mipmap/bg_generalize"
+                >
+                <ImageView
+                    android:layout_width="224px"
+                    android:layout_height="224px"
+                    android:layout_marginTop="350px"
+                    android:src="@mipmap/icon_test_two_code"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是爱因斯坦"
+                    android:textColor="@color/color_text_black_222"
+                    android:textSize="32px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我为分享日历代言"
+                    android:textColor="@color/color_brown_90"
+                    android:textSize="44px"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!--底部-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+                <!--上弹按钮-->
+                <LinearLayout
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="二维码使用指南"
+                        android:textSize="32px"
+                        android:padding="30px"
+                        android:textColor="@color/color_brown_90"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="了解详情"
+                        android:textSize="32px"
+                        android:padding="30px"
+                        android:gravity="right"
+                        android:drawablePadding="10px"
+                        android:drawableRight="@mipmap/arrow_up"
+                        android:textColor="@color/color_brown_90"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

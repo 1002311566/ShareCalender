@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344px"
+    android:layout_height="506px"
+    android:background="@color/color_gray_c3"
+    android:layout_margin="20px"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_seleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_change_theme_add"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="26px"
+            android:text="点击添加图片"
+            android:padding="15px"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="自定义皮肤"
+        android:textColor="@color/color_white"
+        android:textSize="30px"
+        android:layout_marginBottom="30px"
+        />
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:background="@drawable/select_btn_default_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_day_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全天"
+            android:textColor="@color/color_text_black_222"
+            android:textSize="28px"
+            android:layout_marginRight="50px"
+            />
+    
+    <ImageView
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="40px"
+        android:src="@drawable/calendar_shape_blue_dot"
+        />
+    <TextView
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="公司开会"
+        android:textSize="30px"
+        android:textColor="@color/color_text_black_111"
+        />
+    </LinearLayout>
+    <include layout="@layout/layout_spli_gray"/>
+</LinearLayout>

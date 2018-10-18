@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_my_friend_details"
+        android:orientation="vertical">
+
+        <com.yihuan.sharecalendar.ui.view.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="38px"
+            android:layout_marginTop="39px"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <TextView
+        style="@style/style_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="40px"
+        android:gravity="left"
+        android:text="此刻心情"
+        android:textSize="40px" />
+
+    <!--心情图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@mipmap/bg_my_mood"
+        android:gravity="bottom"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        >
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/selector_l_1x"
+            />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/selector_l_2x"
+            />
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/selector_l_3x"
+            />
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/selector_l_4x"
+            />
+        <ImageView
+            android:id="@+id/iv_5"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/selector_l_5x"
+            />
+
+    </LinearLayout>
+    <!--心情分数-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="40px"
+        android:paddingRight="30px"
+        >
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="1分"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26px"
+            android:textColor="@color/color_text_black_999"
+            />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="2分"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26px"
+            android:textColor="@color/color_text_black_999"
+            />
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="3分"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26px"
+            android:textColor="@color/color_text_black_999"
+            />
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="4分"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26px"
+            android:textColor="@color/color_text_black_999"
+            />
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="5分"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="26px"
+            android:textColor="@color/color_text_black_999"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="27px"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享日历"
+            android:textSize="30px"
+            android:layout_marginLeft="22px"
+            android:textColor="@color/color_text_black_222"
+            />
+
+    </LinearLayout>
+
+
+    <!--心情选择-->
+    <!--<com.yihuan.sharecalendar.ui.view.CheckBoxLayout-->
+        <!--android:activeId="@+activeId/checkbox_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:item_count="5"-->
+        <!--app:layout_item="@layout/layout_checkbox_item_my_mood" />-->
+    <!--我的一周心情指数-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:background="@color/color_green_1"-->
+        <!--android:paddingBottom="20px"-->
+        <!--android:paddingLeft="60px"-->
+        <!--android:paddingTop="20px"-->
+        <!--android:text="我的一周心情指数"-->
+        <!--android:textColor="@color/color_white" />-->
+
+    <!--<com.yihuan.sharecalendar.ui.view.MoodView-->
+        <!--android:activeId="@+activeId/moodView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:bottom_text_color="@color/color_text_black_666"-->
+        <!--app:bottom_text_size="14sp"-->
+        <!--app:circle_color="@color/color_blue"-->
+        <!--app:left_text_color="@color/color_text_black_666"-->
+        <!--app:left_text_size="14sp"-->
+        <!--app:line_color="@color/color_red_fc46"-->
+        <!--app:x_line_color="@color/color_gray_split"-->
+        <!--app:xy_color="@color/color_gray_c3" />-->
+</LinearLayout>

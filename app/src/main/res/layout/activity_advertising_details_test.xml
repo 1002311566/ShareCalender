@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="46px"
+            android:layout_marginTop="53px"
+            android:gravity="center"
+            android:text="广告活动主题"
+            android:textColor="@color/color_blue_007dff"
+            android:textSize="36px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动时间："
+                android:textColor="@color/color_black_35"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-01-01至2018-02-01"
+                android:textColor="@color/color_black_35"
+                android:textSize="28px" />
+        </LinearLayout>
+        <!--地址-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动地址："
+                android:textColor="@color/color_black_35"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东省广州市xxxxxx"
+                android:textColor="@color/color_black_35"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="活动内容：广州市某某广告有限公司旗下拥有一支强大的团队，公司拥有广播级电视制作设备，能快捷优质地为客户提供创意策划、摄影摄像、后期剪辑制作一条龙服务。公司主创人员具有多年影视创作经验，擅长拍摄企业宣传片、广告片、影视节目制作以及文艺晚会。凭借在行业内有着极为丰富的工作经验和制作方法，为企事业单位提供全方位的高品质、高形式的各项专业服务。"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="690px"
+            android:layout_height="413px"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_advertising_details" />
+
+        <TextView
+            android:id="@+id/tv_add_my_schedule"
+            style="@style/style_default_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="63px"
+            android:gravity="center"
+            android:paddingTop="25px"
+            android:paddingBottom="25px"
+            android:text="把该活动创建到日程"
+            android:textColor="@color/color_white"
+            android:textSize="36px" />
+
+    </LinearLayout>
+
+
+</ScrollView>

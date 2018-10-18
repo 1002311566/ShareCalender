@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:orientation="horizontal"
+    android:background="@color/color_gray_split_f5"
+    android:paddingLeft="30px">
+
+    <TextView
+        style="@style/style_text_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="我的提醒"
+        android:textSize="32px" />
+
+    <TextView
+        style="@style/style_text_default"
+        android:layout_marginLeft="20px"
+        android:text="(长按删除，点击编辑)"
+        android:textColor="@color/color_text_black_999"
+        android:textSize="26px" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_spli_margin_gray" />
+    <include layout="@layout/layout_spli_gray" />
+    <!--推广大使-->
+    <TextView
+        android:id="@+id/tv_tuiguang"
+        style="@style/style_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:gravity="left"
+        android:visibility="gone"
+        android:padding="30px"
+        android:text="分享大使" />
+    <!--<include layout="@layout/layout_spli_gray" />-->
+    <!--关于我们-->
+    <TextView
+        android:id="@+id/tv_about_me"
+        style="@style/style_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:gravity="left"
+        android:padding="30px"
+        android:text="联系我们" />
+    <include layout="@layout/layout_spli_gray" />
+    <!--修改密码-->
+    <TextView
+        android:id="@+id/tv_reset_password"
+        style="@style/style_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:gravity="left"
+        android:padding="30px"
+        android:text="修改密码" />
+    <include layout="@layout/layout_spli_gray" />
+    <!--更改皮肤-->
+    <TextView
+        android:id="@+id/tv_change_theme"
+        style="@style/style_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:gravity="left"
+        android:padding="30px"
+        android:text="更改皮肤" />
+    <include layout="@layout/layout_spli_gray" />
+
+    <include layout="@layout/layout_spli_margin_gray" />
+    <include layout="@layout/layout_spli_gray" />
+    <!--清除缓存-->
+    <LinearLayout
+        android:id="@+id/ll_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_btn_default_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            style="@style/new_create_active_text"
+            android:text="清除缓存" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            style="@style/new_create_active_text"
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="0MB" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_split_f5">
+
+        <!--推出登录-->
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/style_default_button"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:text="退 出 登 录"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+</LinearLayout>

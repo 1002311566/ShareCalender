@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        >
+    <TextView
+        style="@style/new_create_active_text"
+        android:text="提醒" />
+
+    <TextView
+        android:id="@+id/tv_remind_time"
+        style="@style/new_create_active_text"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:drawablePadding="20px"
+        android:textColor="@color/color_text_black_666"
+        android:drawableRight="@mipmap/icon_new_active_right_arrow"
+        android:gravity="right"
+        android:text="5分钟前" />
+
+    <ImageView
+        android:id="@+id/iv_delete_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:src="@mipmap/icon_delete_line" />
+    </LinearLayout>
+    <include layout="@layout/layout_spli_gray"/>
+</LinearLayout>

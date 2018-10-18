@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--//RecyclerView分界线-->
+    <attr name="recyclerview_divider" format="reference"/>
+    <attr name="circle_color" format="color"/>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxLayout">
+        <attr name="layout_item" format="reference"/>
+        <attr name="item_count" format="integer"/>
+        <attr name="is_single" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="MoodView">
+        <attr name="xy_color" format="color"/>
+        <attr name="left_text_color" format="color"/>
+        <attr name="left_text_size" format="dimension"/>
+        <attr name="bottom_text_color" format="color"/>
+        <attr name="bottom_text_size" format="dimension"/>
+        <attr name="x_line_color" format="color"/>
+        <attr name="line_color" format="color"/>
+        <attr name="circle_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectorView">
+        <attr name="redius" format="integer"/>
+        <attr name="circle_color"/>
+        <attr name="select_text_color" format="color"/>
+    </declare-styleable>
+</resources>

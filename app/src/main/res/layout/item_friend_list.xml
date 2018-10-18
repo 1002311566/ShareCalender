@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--首字母-->
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:text="A"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:background="@color/color_gray_split_f5"
+        android:textSize="32px"
+        android:textColor="@color/color_text_black_999"
+        android:paddingLeft="30px"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/select_btn_default_bg"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="15px"
+        android:paddingBottom="15px"
+        >
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:button="@null"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30px"
+            android:drawableLeft="@drawable/selector_check_box" />
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:src="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:textSize="32px"
+            android:textColor="@color/color_text_black_111"
+            />
+        <ImageView
+            android:id="@+id/iv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_birthday"
+            android:visibility="gone"
+            android:layout_marginRight="10px"
+            />
+        <ImageView
+            android:id="@+id/iv_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/color_gray_split"/>
+
+</LinearLayout>

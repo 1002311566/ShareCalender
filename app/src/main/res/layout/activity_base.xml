@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--顶部标题栏-->
+        <com.yihuan.sharecalendar.ui.view.TitleView
+            android:id="@+id/title_view"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <!--内容区域-->
+        <LinearLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!--加载框-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_loadding"
+        layout="@layout/layout_loadding"
+        android:visibility="gone" />
+    <!--放置不常见布局，无数据，无网络，错误-->
+    <ViewStub
+        android:id="@+id/vs_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/vs_new_layout"
+        android:layout="@layout/layout_viewstub" />
+
+</merge>

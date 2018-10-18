@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        style="@style/style_default_edittext"
+        android:drawableLeft="@mipmap/icon_search_small"
+        android:hint="搜索" />
+
+    <include layout="@layout/layout_spli_gray" />
+
+    <TextView
+        android:id="@+id/tv_tag_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:text="通过标签搜索"
+        android:textColor="@color/color_text_black_333"
+        android:textSize="30px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recyclerview_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white" />
+
+
+</LinearLayout>
